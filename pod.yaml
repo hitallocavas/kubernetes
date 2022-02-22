@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: places-api
+  labels:
+    name: places-api
+spec:
+  containers:
+  - name: places-api
+    image: "hitallocavas/places-api:latest"

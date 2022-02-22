@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: places-api
+  labels:
+    app: places-api
+spec:
+  selector:
+    matchLabels:
+      app: places-api
+  replicas: 2
+  template:
+    metadata:
+      name: places-api
+      labels:
+        app: places-api
+    spec:
+      containers:
+        - name: places-api
+          image: "hitallocavas/places-api:latest"
+
