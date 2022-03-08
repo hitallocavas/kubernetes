@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: places-api
-  type: ClusterIP
+  type: LoadBalancer
   ports:
   - port: 8080
     name: places-api-service
